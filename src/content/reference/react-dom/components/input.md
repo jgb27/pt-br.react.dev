@@ -49,26 +49,40 @@ Você pode [criar um controlador input](#controlando-uma-entrada-com-uma-variáv
 
 Quando você passa qualquer um deles, você também deve passar um manipulador `onChange` que atualiza o valor passado.
 
-Essas props do `<input>` são relevantes apenas para entradas não controladas:
+Essas propriedades do `<input>` são relevantes apenas para entradas não controladas:
 
-* [`defaultChecked`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#defaultChecked): A boolean. Specifies [the initial value](#providing-an-initial-value-for-an-input) for `type="checkbox"` and `type="radio"` inputs.
-* [`defaultValue`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#defaultValue): A string. Specifies [the initial value](#providing-an-initial-value-for-an-input) for a text input.
+* [`defaultchecked`](https://developer.mozilla.org/en-us/docs/web/api/htmlInputElement#defaultchecked): um booleano. Especifica [o valor inicial](#providing-an-initial-value-for-an-input) para as entradas `type="checkbox"` e `type="radio"`.
 
-These `<input>` props are relevant both for uncontrolled and controlled inputs:
+* [`defaultValue`](https://developer.mozilla.org/en-us/docs/web/api/htmlInputElement#defaultValue): uma string. Especifica [o valor inicial](#providing-an-initial-value-for-an-input) para uma entrada de texto.
 
-* [`accept`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#accept): A string. Specifies which filetypes are accepted by a `type="file"` input.
-* [`alt`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#alt): A string. Specifies the alternative image text for a `type="image"` input.
-* [`capture`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#capture): A string. Specifies the media (microphone, video, or camera) captured by a `type="file"` input.
-* [`autoComplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#autocomplete): A string. Specifies one of the possible [autocomplete behaviors.](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
-* [`autoFocus`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#autofocus): A boolean. If `true`, React will focus the element on mount.
-* [`dirname`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#dirname): A string. Specifies the form field name for the element's directionality.
-* [`disabled`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#disabled): A boolean. If `true`, the input will not be interactive and will appear dimmed.
-* `children`: `<input>` does not accept children.
-* [`form`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form): A string. Specifies the `id` of the `<form>` this input belongs to. If omitted, it's the closest parent form.
-* [`formAction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction): A string. Overrides the parent `<form action>` for `type="submit"` and `type="image"`.
-* [`formEnctype`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formenctype): A string. Overrides the parent `<form enctype>` for `type="submit"` and `type="image"`.
-* [`formMethod`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formmethod): A string. Overrides the parent `<form method>` for `type="submit"` and `type="image"`.
-* [`formNoValidate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formnovalidate): A string. Overrides the parent `<form noValidate>` for `type="submit"` and `type="image"`.
+Essas propriedades do `<input>` são relevantes tanto para entradas controladas quanto não controladas:
+
+* [`accept`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#accept): Uma string. Especifica quais os tipos de arquivo vão ser aceitos por uma entrada `type="file"`.
+
+* [`alt`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#alt): Uma string. Especifica o texto de imagem alternativo para uma entrada `type="image"`.
+
+* [`capture`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#capture): Uma string. Especifica a mídia (microfone, vídeo ou câmera) capturada por uma entrada `type="file"`.
+
+* [`autoComplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#autocomplete): Uma string. Especifica um dos possíveis [comportamentos de preenchimento automático.](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
+
+* [`autoFocus`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#autofocus): Um booleano. Se `true`, o React focará o elemento na montagem.
+
+* [`dirname`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#dirname): Uma string. Especifica o nome do campo de formulário para a direcionalidade do elemento.
+
+* [`disabled`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#disabled): um boolean. Se for `true`, o `input` não vai ser interativa e vai aparecer em uma cor mais opaca 
+
+* `children`: `<input>` não aceita componentes filhos.
+
+* [`form`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form): Um string. Especifique o `id` do `<form>` que esse input pertece. Se não informado, vai pertercer ao `form` pai mais próximo.
+
+* [`formAction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction): uma string. Sobrescreve o componente pai `<form action>` para `type="submit"` e `type="image"`.
+
+* [`formEnctype`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formenctype): uma string. Sobrescreve o componente pai `<form enctyep>` para `type="submit"` e `type="image"`.
+
+* [`formMethod`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formmethod): Uma string. Sobrescreve o componente pai `<form method>` para `type="submit"` e `type="image"`.
+
+* [`formNoValidate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formnovalidate): uma string. Sobrescreve o componente pai `<form noValidate>` para `type="submit"` e `type="image"`.
+
 * [`formTarget`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formtarget): A string. Overrides the parent `<form target>` for `type="submit"` and `type="image"`.
 * [`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#height): A string. Specifies the image height for `type="image"`.
 * [`list`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list): A string. Specifies the `id` of the `<datalist>` with the autocomplete options.
