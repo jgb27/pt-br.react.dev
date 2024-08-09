@@ -1,5 +1,5 @@
 ---
-title: "<input>"
+Titulo: "<input>"
 ---
 
 <Intro>
@@ -35,20 +35,21 @@ Para exibir uma entrada, basta renderize o componente [interno do navegador `<in
 
 <Canary>
 
-React's extensions to the `formAction` prop are currently only available in React's Canary and experimental channels. In stable releases of React, `formAction` works only as a [built-in browser HTML component](/reference/react-dom/components#all-html-components). Learn more about [React's release channels here](/community/versioning-policy#all-release-channels).
+As extensões do React para o `formAction` estão disponíveis atualmente apenas nos canais Canary e experimental do React. Em versões estáveis ​​do React, `formAction` funciona apenas como um [componente HTML do navegador](/reference/react-dom/components#all-html-components). Saiba mais sobre [os canais de lançamento do React aqui](/community/versioning-policy#all-release-channels).
 
 </Canary>
 
-[`formAction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction): A string or function. Overrides the parent `<form action>` for `type="submit"` and `type="image"`. When a URL is passed to `action` the form will behave like a standard HTML form. When a function is passed to `formAction` the function will handle the form submission. See [`<form action>`](/reference/react-dom/components/form#props).
+[`formAction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction): Uma string ou função. Substitua o pai `<form action>` por `type="submit"` e `type="image"`. Quando uma URL é passada para `action`, o formulário se comportará como um formulário HTML padrão. Quando uma função é passada para `formAction`, a função manipulará o envio do formulário. Veja [`<form action>`](/reference/react-dom/components/form#props).
 
-You can [make an input controlled](#controlling-an-input-with-a-state-variable) by passing one of these props:
+Você pode [criar um controlador input](#controlando-uma-entrada-com-uma-variável-de-estado) passando uma das propriedades abaixo:
 
-* [`checked`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#checked): A boolean. For a checkbox input or a radio button, controls whether it is selected.
-* [`value`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#value): A string. For a text input, controls its text. (For a radio button, specifies its form data.)
+* [`checked`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#checked): Um booleano. Podendo ser uma caixa de seleção ou um botão de opção, sendo possível saber se ele está selecionado.
 
-When you pass either of them, you must also pass an `onChange` handler that updates the passed value.
+* [`value`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#value): Uma string. Para entrada de texto e controlar o texto do `<input>`. (Para criar botão de opção, especificar no form data.)
 
-These `<input>` props are only relevant for uncontrolled inputs:
+Quando você passa qualquer um deles, você também deve passar um manipulador `onChange` que atualiza o valor passado.
+
+Essas props do `<input>` são relevantes apenas para entradas não controladas:
 
 * [`defaultChecked`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#defaultChecked): A boolean. Specifies [the initial value](#providing-an-initial-value-for-an-input) for `type="checkbox"` and `type="radio"` inputs.
 * [`defaultValue`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#defaultValue): A string. Specifies [the initial value](#providing-an-initial-value-for-an-input) for a text input.
