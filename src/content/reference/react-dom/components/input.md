@@ -4,7 +4,7 @@ title: "<input>"
 
 <Intro>
 
-The [built-in browser `<input>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) lets you render different kinds of form inputs.
+O [componente `<input>` do navegador](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) permite renderizar diferentes tipos de entradas de formulário.
 
 ```js
 <input />
@@ -16,21 +16,22 @@ The [built-in browser `<input>` component](https://developer.mozilla.org/en-US/d
 
 ---
 
-## Reference {/*reference*/}
+## Referência {/*reference*/}
 
 ### `<input>` {/*input*/}
 
-To display an input, render the [built-in browser `<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) component.
+Para exibir uma entrada, basta renderize o componente [interno do navegador `<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input).
+
 
 ```js
 <input name="myInput" />
 ```
 
-[See more examples below.](#usage)
+[Veja mais exemplos abaixo.](#usage)
 
 #### Props {/*props*/}
 
-`<input>` supports all [common element props.](/reference/react-dom/components/common#props)
+`<input>` suporta todos os [props de elementos comuns.](/reference/react-dom/components/common#props)
 
 <Canary>
 
